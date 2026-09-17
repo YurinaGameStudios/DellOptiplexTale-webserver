@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DellOptiplexTale</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-color: #58a6ff;
+            --text-main: #c9d1d9;
+            --text-sub: #8b949e;
+            --border-color: #30363d;
+            --highlight: #8257e5;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1:first-of-type {
+            margin-top: 0;
+        }
+
+        blockquote {
+            background-color: #202024;
+            border-left: 4px solid var(--highlight);
+            margin: 0 0 1.5rem 0;
+            padding: 1rem 1.5rem;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+            color: #a8a8b3;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color);
+            transition: color 0.2s, border-bottom-color 0.2s;
+        }
+
+        a:hover {
+            color: #80ffea;
+            border-bottom-style: solid;
+        }
+
+        .countdown-box {
+            background: linear-gradient(145deg, #1f242c, #161b22);
+            border: 1px solid var(--highlight);
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .countdown-time {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff79c6;
+            font-family: monospace;
+        }
+
+        .warning-text {
+            color: #ff5555;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .sign-off {
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <blockquote>
+            "DellOptiplexTale's development is chaotic i think i started it in July or August i dont really know" 
+            <br>&mdash; Chris
+        </blockquote>
+
+        <!-- Live Wedding Presentation Countdown Tracker -->
+        <div class="countdown-box">
+            <p style="margin: 0 0 5px 0; font-size: 0.9rem; color: var(--text-sub);">🚨 WEDDING PRESENTATION COUNTDOWN 🚨</p>
+            <div class="countdown-time" id="timer">Loading crunch clock...</div>
+        </div>
+
+        <h1>Welcome to DellOptiplexTale</h1>
+        <img src="https://www.facebook.com/photo/?fbid=122111229123405712&set=pcb.2495730640896763&__cft__[0]=AZib_gWtGvvLWmL2geZarguWYf3JbY9dhZ1i_qnvAvULv-xUpr6d1dGZCoGAlp0ifPSIZEym4cUAtzgKlg-JugMhMTAyvj9gDSr2wkhNkdTyHg9d2UluyrTfWP4fbzA5W69utUPB0hQEFa919Hfo&__tn__=*b0H-R">
+        <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/806318615_122111229177405712_5386760768958820157_n.jpg?stp=dst-jpg_tt6&cstp=mx1366x768&ctp=s590x590&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=nrtX1GQJnrcQ7kNvwFiaAHR&_nc_oc=AdqyX2J3jbmUgKVg1Whz9uuz56birVpo6IREDIZDoZK0iDCrBo1W9YePQm23rGzkYUHOK634SNDkjuSPwNnTDZP1&_nc_zt=23&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=Q4hecMtIsWgN8xwxmoQjLg&_nc_ss=7b2a8&oh=00_AQKZv4uXut92CIneOAyGNGRDZr9ECIE2Z0ZoFw_Oxk7fXg&oe=6AB1BB81">
+        <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/806050441_122111229171405712_8008385599640346467_n.jpg?stp=dst-jpg_tt6&cstp=mx1366x768&ctp=s590x590&_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=nDcyuszR1u0Q7kNvwHOw0pV&_nc_oc=AdpdIooCrgceQ2rxXNU57F4ImsxgZnSsskN76B6zWF7M4XMmWaC-ILX5UUD1dWnNqjaEKoC4gatMdu26uu_ajdR5&_nc_zt=23&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=Q4hecMtIsWgN8xwxmoQjLg&_nc_ss=7b2a8&oh=00_AQLzsGPhPFe2iIn4SHS6ShEmcVlPnwtGRoIJr-HCF5hDZQ&oe=6AB1BA10">
+    <div>
+    <script>
+        // Set the Target Launch Date (September 21, 2026)
+        const targetDate = new Date("Sep 21, 2026 00:00:00").getTime();
+
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            // Math computations for remaining time boxes
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            // Display results inside the element
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If countdown ends
+            if (difference < 0) {
+                clearInterval(countdown);
+                document.getElementById("timer").innerHTML = "🎉 IT'S SHOWTIME! WEDDING LAUNCH LIVE! 🎉";
+                document.getElementById("timer").style.color = "#50fa7b";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>

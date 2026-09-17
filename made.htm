@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How DellOptiplexTale was made?</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-color: #58a6ff;
+            --text-main: #c9d1d9;
+            --text-sub: #8b949e;
+            --border-color: #30363d;
+            --highlight: #8257e5;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1:first-of-type {
+            margin-top: 0;
+        }
+
+        blockquote {
+            background-color: #202024;
+            border-left: 4px solid var(--highlight);
+            margin: 0 0 1.5rem 0;
+            padding: 1rem 1.5rem;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+            color: #a8a8b3;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color);
+            transition: color 0.2s, border-bottom-color 0.2s;
+        }
+
+        a:hover {
+            color: #80ffea;
+            border-bottom-style: solid;
+        }
+
+        .countdown-box {
+            background: linear-gradient(145deg, #1f242c, #161b22);
+            border: 1px solid var(--highlight);
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .countdown-time {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff79c6;
+            font-family: monospace;
+        }
+
+        .warning-text {
+            color: #ff5555;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .sign-off {
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>How DellOptiplexTale was Made</h1>
+        
+        <blockquote>
+            "DellOptiplexTale's development is chaotic i think i started it in July or August i dont really know" 
+            <br>&mdash; Chris
+        </blockquote>
+
+        <!-- Live Wedding Presentation Countdown Tracker -->
+        <div class="countdown-box">
+            <p style="margin: 0 0 5px 0; font-size: 0.9rem; color: var(--text-sub);">🚨 WEDDING PRESENTATION COUNTDOWN 🚨</p>
+            <div class="countdown-time" id="timer">Loading crunch clock...</div>
+        </div>
+
+        <p>
+            DellOptiplexTale was started on <strong>September 9, 2026</strong> for ACTUAL game development, since July and August were too chaotic. Not much happened between September 10 to 16, until September 17—exactly 4 days before my sister's wedding presentation! The developer opened Sublime Text and created this layout.
+        </p>
+        
+        <p>
+            When September 9 hit, the developer chose Ren'Py. This game is brought to you by the creator of 
+            <a href="https://itch.io" target="_blank">Saturn Computing Topic</a>, 
+            Chris. He is a 12-year-old game programmer born on October 16, 2013, making him one of the youngest independent Filipino game developers out there. He is a dedicated Christian.
+        </p>
+
+        <h1>Who is Chris?</h1>
+        <p class="warning-text">⚠️ JUST ONE NOTE: I won't show my home address or school. I don't want people finding me!</p>
+        
+        <p>
+            To describe him basic: he is a massive Church of God Dasma fanboy. If you spot him there, he will be wearing his signature glasses and a protective face mask to keep things completely private.
+        </p>
+        
+        <p>
+            While creating these games, he was completely BROKE. He started his programming journey way back in Grade 4 at 9 years old using Scratch, running on a beat-up Windows 7 computer built from loose parts in 2022. Since he spent his gift money instantly instead of saving it, the dev budget remains completely empty!
+        </p>
+
+        <p>
+            In February 2023, his dad gifted him a computer built around an MSI A68HM-E33 V2 motherboard. Chris absolutely loves old-school legacy tech and never passes up an opportunity to salvage an ancient computer system. His very first machine was a classic HP Compaq d220 MT, which currently sits completely disassembled in parts.
+        </p>
+
+        <p>
+            His family circle includes his 9-year-old American cousin, Jaella, who traveled to the Philippines back in 2023. She has been visiting since she was very small, around 2017 to 2019.
+        </p>
+
+        <p class="sign-off">
+            — Chris
+        </p>
+    </div>
+
+    <script>
+        // Set the Target Launch Date (September 21, 2026)
+        const targetDate = new Date("Sep 21, 2026 00:00:00").getTime();
+
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            // Math computations for remaining time boxes
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            // Display results inside the element
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If countdown ends
+            if (difference < 0) {
+                clearInterval(countdown);
+                document.getElementById("timer").innerHTML = "🎉 IT'S SHOWTIME! WEDDING LAUNCH LIVE! 🎉";
+                document.getElementById("timer").style.color = "#50fa7b";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
